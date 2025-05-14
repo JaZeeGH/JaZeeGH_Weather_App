@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whether Weather</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/versions/bulma-no-dark-mode.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <script src="/js/components/nav.js"></script>
+  <script src="/js/data/weather_data.js"></script>
+  <script src="/js/data/data-store.js"></script>
+  <script src="/js/wetherweather.js"></script>
+  <script src="/js/components/citydaycards.js"></script>
+  <script src="/js/components/citypoc.js"></script>
+  <script src="/js/components/dashboard.js"></script>
+  <script src="/js/components/dashcards.js"></script>
+  <script>
+    console.log(dayjs().format('YYYY-MM-DDTHH:mm:ss'));
+    console.log(dayjs().format('dddd'));
+  </script>
+  
+  <script src="/js/pages/cityview.js"></script>
+  
+</head>
+
+
+
+<body>
+
+  <!-- START NAV -->
+<nav class="navbar has-background-grey-darker">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/index.html">
+      <img src="/images/logo.png" alt="Logo" />
+    </a>
+    <span class="navbar-burger has-background-grey-darker" data-target="navbarMenu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </span>
+  </div>
+  <div id="navbarMenu" class="navbar-menu">
+    <div class="navbar-end has-background-grey-darker">
+      <a class="navbar-item has-text-white" href="/index.html">
+        Dashboard
+      </a>
+      <a class="navbar-item has-text-white">
+        Settings
+      </a>
+    </div>
+  </div>
+</nav>
+<!-- END NAV -->
+
+  <!-- Main Class -->
+  <main class="columns is-multiline box is-centered is-vcentered">
+      <header class="column is-12 has-text-centered has-text-white">
+    <p id="page-heading" class="is-size-1">City View</p>
+  </header>
+
+
+ 
+  </main>
+
+  <!-- END MAIN CLASS -->
+  <!-- Footer-->
+<footer class="footer has-background-grey-lighter has-text-white">
+  <div class="container">
+    <div class="content has-text-centered has-text-grey">
+      <p>
+        The Whether Weather App - created for SETU in 2025.
+      </p>
+    </div>
+  </div>
+</footer>
+<!-- END FOOTER -->
+</body>
+
+</html>
+

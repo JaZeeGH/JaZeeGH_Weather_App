@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Whether Weather</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon.png" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/versions/bulma-no-dark-mode.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <script src="/js/nav.js"></script>
+  
+  <script>
+    console.log(dayjs().format('YYYY-MM-DDTHH:mm:ss'));
+  </script>
+
+<script src="/js/pages/dashboard.js"></script>
+</head>
+
+
+
+<body>
+
+  <!-- START NAV -->
+<nav class="navbar has-background-grey-darker">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/index.html">
+      <img src="/images/logo.png" alt="Logo" />
+    </a>
+    <span class="navbar-burger has-background-grey-darker" data-target="navbarMenu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </span>
+  </div>
+  <div id="navbarMenu" class="navbar-menu">
+    <div class="navbar-end has-background-grey-darker">
+      <a class="navbar-item has-text-white" href="/index.html">
+        Home
+      </a>
+      <a class="navbar-item has-text-white" href="/dashboard">
+        Dashboard
+      </a>
+      <a class="navbar-item has-text-white">
+        Settings
+      </a>
+    </div>
+  </div>
+</nav>
+<!-- END NAV -->
+
+  <!-- Main Class -->
+  <main class="columns is-multiline box is-centered is-vcentered">
+      <header class="column is-12 has-text-centered has-text-white">
+    <p id="page-heading" class="is-size-1"></p>
+  </header>
+
+
+
+
+    <div class="column is-4 has-text-centered">
+      <img src="/images/logo.png" alt="Logo">
+    </div>
+
+    <div class="column is-4 has-text-weight-bold has-text-black has-text-centered">
+      <section>
+        <article class="has-text-weight-bold">
+          <p class="content is-size-1">
+            <span>Dashboard</span>
+          </p>
+          <p class="is-size-3">
+            <span id="time"></span>
+          </p>
+        </article>
+      </section>
+    </div>
+
+    <div class="column is-4 has-text-centered ">
+    </div>
+  </main>
+
+  <!-- END MAIN CLASS -->
+  <!-- Footer-->
+<footer class="footer has-background-grey-lighter has-text-white">
+  <div class="container">
+    <div class="content has-text-centered has-text-grey">
+      <p>
+        The Whether Weather App - created for SETU in 2025.
+      </p>
+    </div>
+  </div>
+</footer>
+<!-- END FOOTER -->
+</body>
+
+</html>
