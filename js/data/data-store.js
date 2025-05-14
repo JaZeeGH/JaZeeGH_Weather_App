@@ -3,17 +3,14 @@ const dataStore = {
         {
           city: "amsterdam",
           name: "Amsterdam",
-          imageUrl: "https://unsplash.com/photos/body-of-water-under-white-sky-QRtym77B6xk"
         },
         {
           city: "berlin",
           name: "Berlin",
-          imageUrl: "https://unsplash.com/photos/city-buildings-near-body-of-water-during-daytime-1uWanmgkd5g"
-        },
+        }
         {
           city: "copenhagen",
           name: "Copenhagen",
-          imageUrl: "https://unsplash.com/photos/assorted-color-buildings-near-red-boat-docked-on-port-during-daytime-I17LBNJq9q8"
         },
         {
           city: "cork",
