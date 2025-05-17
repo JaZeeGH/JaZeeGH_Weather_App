@@ -6,15 +6,45 @@ return`
     </div>
 
     <div class="column is-4 has-text-weight-bold has-text-black has-text-centered">
-      <article class="has-text-weight-bold">
-        <p class="content is-size-2">
+    <section class="card is-centered has-text-centered>
+      <header class="header">
+        <p class="header-title is-size-2 is-centered has-text-black">
           <span>${currentCity}</span>
         </p>
         <p class="is-size-3">
           <span>${dashTime}</span>
         </p>
-      </article>
+      </header>
       </section>
+      <article>
+    <div class="dropdown is-hoverable">
+    <!-- This is coming from Bulma - https://bulma.io/documentation/components/dropdown/ Hoverable Dropdown Menu -->
+    <div class="dropdown-trigger">
+      <button class="button" aria-haspopup="true" aria-controls="dropdown-menu">
+        <span>Look at other Cities</span>
+        <span class="icon is-small">
+          <i class="fas fa-angle-down" aria-hidden="true"></i>
+        </span>
+      </button>
+    </div>
+    <div class="dropdown-menu" id="dropdown-menu" role="menu">
+      <div class="dropdown-content">
+        <div class="dropdown-item">
+          <a href="/cityview/?city=amsterdam" class="dropdown-item"> Amsterdam </a>
+          <a href="/cityview/?city=berlin" class="dropdown-item"> Berlin </a>
+          <a href="/cityview/?city=copenhagen" class="dropdown-item"> Copenhagen </a>
+          <a href="/cityview/?city=cork" class="dropdown-item"> Cork </a>
+          <a href="/cityview/?city=new_york" class="dropdown-item"> New York </a>
+          <a href="/cityview/?city=paris" class="dropdown-item"> Paris </a>
+          <a href="/cityview/?city=san_francisco" class="dropdown-item"> San Francisco </a>
+          <a href="/cityview/?city=tromso" class="dropdown-item"> Tromso </a>
+          <a href="/cityview/?city=waterford" class="dropdown-item"> Waterford </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </article>
+  </section>
     </div>
 
     <div class="column is-4 has-text-centered ">

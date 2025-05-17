@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const main = document.querySelector('main');
   main.innerHTML = main.innerHTML + createDashboardSite(dashTime);//adding the dashboard to the main page
 
-  dataStore.list().forEach((currentCity) => { //using the data-store array to initiate the 6 cities for the dashboard cards
+  dataStore.list().forEach((currentCity) => { //using the data-store array to initiate the cities for the dashboard cards
 
 
     const dailyData = weatherData[currentCity.city + "_daily"].daily; 
